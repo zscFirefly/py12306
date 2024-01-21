@@ -21,9 +21,20 @@ py12306 需要运行在 python 3.6 以上版本（其它版本暂未测试)
 
 **1. 安装依赖**
 ```bash
+conda create --name py12306 python=3.10
+conda activate py12306
+
 git clone https://github.com/pjialin/py12306
 
 pip install -r requirements.txt
+
+## 编辑
+/Users/zhengshuocong/anaconda3/envs/py12306/lib/python3.10/collections/__init__.py
+## 添加
+from collections.abc import Mapping
+from collections.abc import MutableMapping
+
+
 ```
 
 **2. 配置程序**
